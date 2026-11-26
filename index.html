@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10121d">
+<title>Bitácora Arcade · Laboratorio de números</title>
+<link rel="stylesheet" href="style.css">
+<header><a class="brand" href="./"><span class="logo">▦</span> Bitácora<span class="mint">Arcade</span></a><span class="online"><i></i> SISTEMA EN LÍNEA</span></header>
+<main>
+  <small class="eyebrow">// LABORATORIO DE NÚMEROS</small>
+  <h1>Arcade numérico<span>.</span></h1>
+  <p class="intro">Un laboratorio inspirado en Tris y Melate. Descifra patrones, descubre curiosidades y juega con la lógica.</p>
+  <nav aria-label="Secciones"><button id="play" aria-pressed="true">▦ &nbsp; Simulador</button><button id="past" aria-pressed="false">◷ &nbsp; Histórico</button></nav>
+  <div id="sim">
+    <div class="section"><span>01</span> SELECCIONA UN MODO</div>
+    <div class="modes"><button class="mode" id="tris" aria-pressed="true"><b class="badge">▥</b><span><strong>Tris binario</strong><em>Detecta el patrón de bits</em></span><i></i></button><button class="mode purple" id="melate" aria-pressed="false"><b class="badge">⬡</b><span><strong>Melate lógico</strong><em>Encuentra el salto entre números</em></span><i></i></button></div>
+    <div class="grid"><section class="terminal"><div class="bar"><span><i></i> TERMINAL DE JUEGO</span><span id="round">RONDA / 001</span></div><div class="display"><small id="label">TRIS BINARIO</small><h2 id="prompt">¿Cuántos bits están encendidos?</h2><div id="nums"></div><div id="choices" aria-label="Opciones de respuesta"></div><p id="feedback" role="status"></p></div><button class="launch" id="next">↻ &nbsp; Generar nuevo reto</button></section>
+    <aside><div class="facttop"><span>✦</span> ARCHIVO GEEK</div><div class="chip" aria-hidden="true"><b>01<br>10</b></div><small id="factid"></small><h2 id="facttitle"></h2><p id="fact"></p></aside></div>
+  </div>
+  <section id="history" hidden><div class="section"><span>02</span> ARCHIVO DE SORTEOS</div><article><small>FUENTE: LOTERÍA NACIONAL / MÉXICO</small><h2>Resultados históricos</h2><p>Muestra de diez concursos por juego, guardada de los archivos oficiales. Cada sorteo es independiente: los resultados anteriores no predicen el siguiente.</p><label>Ver concursos de <select id="source"><option>Tris</option><option>Melate</option></select></label><table><thead><tr><th>Fecha</th><th>Concurso</th><th>Números principales</th></tr></thead><tbody id="rows"></tbody></table></article></section>
+  <footer><span>▦ &nbsp; BITÁCORA ARCADE</span><span>Simulador educativo · Sin apuestas</span></footer>
+</main><script src="archivo.js"></script><script src="app.js"></script>
+</html>
