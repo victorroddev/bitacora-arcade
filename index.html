@@ -12,6 +12,16 @@
   <p class="intro">Un laboratorio inspirado en Tris y Melate. Descifra patrones, descubre curiosidades y juega con la lógica.</p>
   <nav aria-label="Secciones"><button id="play" aria-pressed="true">▦ &nbsp; Simulador</button><button id="past" aria-pressed="false">◷ &nbsp; Histórico</button></nav>
   <div id="sim">
+    <details class="guide" open>
+      <summary>Cómo jugar</summary>
+      <p>Elige uno de los dos modos. En cada ronda verás una secuencia y tres respuestas: pulsa la que creas correcta.</p>
+      <ul>
+        <li><b>Tris binario:</b> cuenta los unos en las cinco casillas. En <code>1 0 1 1 0</code> hay tres unos: pulsa <b>3</b>.</li>
+        <li><b>Melate lógico:</b> busca cuánto aumenta la secuencia en cada paso. En <code>104, 108, 112, 116, 120, 124</code> el salto es de cuatro: pulsa <b>4</b>.</li>
+      </ul>
+      <p>Si fallas, lee la pista y prueba otra respuesta. Pulsa <b>Generar nuevo reto</b> para avanzar o saltarte la ronda actual.</p>
+      <p><b>¿Cuántos retos hay?</b> Puedes jugar tantas rondas como quieras. Hay 32 patrones de Tris y 480 secuencias de Melate; salen al azar y pueden repetirse. El contador indica las rondas generadas, incluidos los saltos. Se reinicia al recargar la página.</p>
+    </details>
     <div class="section"><span>01</span> SELECCIONA UN MODO</div>
     <div class="modes"><button class="mode" id="tris" aria-pressed="true"><b class="badge">▥</b><span><strong>Tris binario</strong><em>Detecta el patrón de bits</em></span><i></i></button><button class="mode purple" id="melate" aria-pressed="false"><b class="badge">⬡</b><span><strong>Melate lógico</strong><em>Encuentra el salto entre números</em></span><i></i></button></div>
     <div class="grid"><section class="terminal"><div class="bar"><span><i></i> TERMINAL DE JUEGO</span><span id="round">RONDA / 001</span></div><div class="display"><small id="label">TRIS BINARIO</small><h2 id="prompt">¿Cuántos bits están encendidos?</h2><div id="nums"></div><div id="choices" aria-label="Opciones de respuesta"></div><p id="feedback" role="status"></p></div><button class="launch" id="next">↻ &nbsp; Generar nuevo reto</button></section>
