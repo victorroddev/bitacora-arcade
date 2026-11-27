@@ -1,6 +1,6 @@
 # Bitácora Arcade
 
-Dos minijuegos de lógica inspirados en Tris y Melate, con curiosidades de tecnología y una muestra histórica de diez concursos por juego. Los datos históricos están guardados en `archivo.js`; no se actualizan en tiempo real.
+Una trivia geek de tres preguntas: cada acierto desbloquea un valor RGB y al final se revela el color con su código hexadecimal. La pestaña Histórico contiene una muestra de diez concursos de Tris y diez de Melate. Los datos históricos están guardados en `archivo.js`; no se actualizan en tiempo real.
 
 ## Probar en local
 
